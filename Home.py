@@ -16,7 +16,7 @@ import os
 # api_key = st.secrets["api_keys"]["GEMINI_API_KEY"]
 # print(api_key)
 
-os.environ["GEMINI_API_KEY"] = st.secrets["GEMINI_API_KEY"]
+os.environ["GEMINI_API_KEY"] == st.secrets["GEMINI_API_KEY"]
 
 
 client = genai.Client()
