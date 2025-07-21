@@ -1,0 +1,6 @@
+.env
+.venv
+.idea
+main1.py
+test1.py
+.streamlit
