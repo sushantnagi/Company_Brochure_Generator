@@ -6,14 +6,18 @@ from google.genai import types
 import json
 from dotenv import load_dotenv
 import time
+import os
 
 # Configure the Gemini client using Streamlit secrets
 # api_key = st.secrets["GEMINI_API_KEY"]
 
-load_dotenv(override=True)
+# load_dotenv(override=True)
 # api_key = os.getenv("GEMINI_API_KEY")
-api_key = st.secrets["api_keys"]["GEMINI_API_KEY"]
-print(api_key)
+# api_key = st.secrets["api_keys"]["GEMINI_API_KEY"]
+# print(api_key)
+
+os.environ["GEMINI_API_KEY"] = st.secrets["GEMINI_API_KEY"]
+
 
 client = genai.Client()
 
