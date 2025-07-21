@@ -13,6 +13,7 @@ import time
 load_dotenv(override=True)
 # api_key = os.getenv("GEMINI_API_KEY")
 api_key = st.secrets["api_keys"]["GEMINI_API_KEY"]
+print(api_key)
 
 client = genai.Client()
 
